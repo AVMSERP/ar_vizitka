@@ -1,22 +1,26 @@
-<head>
-  <script src="https://aframe.io"></script>
-  <script src="https://githack.com"></script>
-  <!-- ДОБАВЛЯЕМ ЭТО ДЛЯ АНИМАЦИИ -->
-  <script src="https://jsdelivr.net"></script>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Основные библиотеки для работы AR и анимации -->
+    <script src="https://aframe.io"></script>
+    <script src="https://githack.com"></script>
+    <script src="https://jsdelivr.net"></script>
+  </head>
 
-<body style="margin: 0px; overflow: hidden;">
-  <a-scene embedded arjs>
-    <a-assets>
-      <a-asset-item id="кукла" src="doll.glb"></a-asset-item>
-    </a-assets>
+  <body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <!-- Загружаем файл куклы в память -->
+      <a-assets>
+        <a-asset-item id="doll" src="doll.glb"></a-asset-item>
+      </a-assets>
 
-    <!-- ОТОБРАЖАЕМ МОДЕЛЬ И ВКЛЮЧАЕМ АНИМАЦИЮ -->
-    <a-marker preset="hiro">
-       
-       
-    </a-marker>
+      <!-- Когда камера видит маркер HIRO, появляется кукла -->
+      <a-marker preset="hiro">
+        
+        
+      </a-marker>
 
-    
-  </a-scene>
-</body>
+      
+    </a-scene>
+  </body>
+</html>
