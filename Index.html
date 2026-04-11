@@ -1,21 +1,22 @@
-<!DOCTYPE html>
-<html>
 <head>
-    <script src="https://aframe.io"></script>
-    <script src="https://githack.com"></script>
+  <script src="https://aframe.io"></script>
+  <script src="https://githack.com"></script>
+  <!-- ДОБАВЛЯЕМ ЭТО ДЛЯ АНИМАЦИИ -->
+  <script src="https://jsdelivr.net"></script>
 </head>
+
 <body style="margin: 0px; overflow: hidden;">
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-        <a-assets>
-            <a-asset-item id="doll" src="doll.glb"></a-asset-item>
-        </a-assets>
+  <a-scene embedded arjs>
+    <a-assets>
+      <a-asset-item id="кукла" src="doll.glb"></a-asset-item>
+    </a-assets>
 
-        <a-marker preset="hiro">
-            
-            
-        </a-marker>
+    <!-- ОТОБРАЖАЕМ МОДЕЛЬ И ВКЛЮЧАЕМ АНИМАЦИЮ -->
+    <a-marker preset="hiro">
+       
+       
+    </a-marker>
 
-        
-    </a-scene>
+    
+  </a-scene>
 </body>
-</html>
