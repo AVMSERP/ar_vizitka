@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
-    <!-- Основные библиотеки AR -->
-
+    <title>BJD AR Card</title
     <script src="https://aframe.io"></script>
     <script src="https://githack.com"></script>
-  </head>
+</head>
 
-  <body style="margin: 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-      
-      <a-assets>
-        <!-- Убедись, что файл doll.glb лежит в той же папке на GitHub -->
-        <a-asset-item id="doll" src="doll.glb"></a-asset-item>
-      </a-assets>
-
-      <a-marker preset="hiro">
-        <!-- Добавляем саму модель на маркер -->
+<body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
         
-        
-      </a-marker>
-
-      
-    </a-scene>
-  </body>
-</html>
+        <a-assets>
+            <a-asset-item id="doll" src="doll.glb"></a-asset-item>
+        </a-assets>
+        <a-marker preset="hiro">
+            
+            
+        </a-marker>
