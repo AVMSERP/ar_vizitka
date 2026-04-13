@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!-- Основные библиотеки AR -->
+
     <script src="https://aframe.io"></script>
     <script src="https://githack.com"></script>
   </head>
@@ -11,12 +12,12 @@
     <a-scene embedded arjs>
       
       <a-assets>
-        <!-- Замени 'model.glb' на реальное название своего файла куклы -->
+        <!-- Убедись, что файл doll.glb лежит в той же папке на GitHub -->
         <a-asset-item id="doll" src="doll.glb"></a-asset-item>
       </a-assets>
 
-      <!-- Маркер HIRO -->
       <a-marker preset="hiro">
+        <!-- Добавляем саму модель на маркер -->
         
         
       </a-marker>
