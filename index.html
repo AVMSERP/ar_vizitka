@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Основные библиотеки для работы AR и анимации -->
+    <meta charset="utf-8">
+    <!-- Основные библиотеки AR -->
     <script src="https://aframe.io"></script>
     <script src="https://githack.com"></script>
-    <script src="https://jsdelivr.net"></script>
   </head>
 
   <body style="margin: 0px; overflow: hidden;">
     <a-scene embedded arjs>
-      <!-- Загружаем файл куклы в память -->
+      
       <a-assets>
+        <!-- Замени 'model.glb' на реальное название своего файла куклы -->
         <a-asset-item id="doll" src="doll.glb"></a-asset-item>
       </a-assets>
 
-      <!-- Когда камера видит маркер HIRO, появляется кукла -->
+      <!-- Маркер HIRO -->
       <a-marker preset="hiro">
         
         
